@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <h1 class="heading">
+        Expense Tracker
+    </h1>
+    <main>
+        <div class="bal">
+            <h3>Your Balance:</h3>
+            <h1 class="amount">₹0.00</h1>
+        </div>
+        
+        <div class="income-expense">
+            <div class="income">
+                <h1>Income</h1>
+                <p>₹0.00</p>
+            </div>
+            <div class="expense">
+                <h1>Expense</h1>
+                <p>₹0.00</p>
+            </div>
+        </div>
+
+        <div class="history">
+            <h2>History</h2>
+            <hr>
+            <div class="history-list">
+                <!-- <div class="hist">
+                    <h2 class="close-btn">&cross;</h2>
+                    <h2>Income</h2>
+                    <h3 class="amount">100000</h3>    
+                </div> -->
+            </div>
+        </div>
+
+        
+        <div class="transactions">
+            <h2>Add new Transaction</h2>
+            <hr>
+
+            <form id="form">
+                <div class="transaction-type">
+                    <label for="text">Transaction Type</label>
+                    <input type="text" id="text" placeholder="Transaction Type">
+                </div>
+                <div class="amount">
+                    <label for="number">Amount<br><span style="font-size: 15px;">(positive for income and negative for expense)</span></label>
+                    <input type="number" id="number" placeholder="Amount">
+                </div>
+                <button type="btn">Add Transaction</button>
+            </form>
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

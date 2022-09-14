@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+label{
+    display: block;
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+input,button{
+    height: 35px;
+    width: 90%;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 10px;
+}
+
+.heading{
+    padding: 30px;
+}
+
+main{
+    width: 350px;
+    text-align: left;
+    margin: 20px auto;
+}
+
+main div{
+    margin: 20px 0;
+}
+
+.income-expense{
+    display: flex;
+    background-color: white;
+    margin: 20px auto;
+    justify-content: space-around;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.income-expense div{
+    padding: 8px;
+}
+
+.income-expense :nth-child(1){
+    border-right: grey;
+}
+
+.income-expense .income p{
+    color: rgb(6, 188, 6);
+}
+
+.income-expense .expense p{
+    color: red;
+}
+
+.hist{
+    display: flex;
+    justify-content:space-between;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.red{
+    border-right: 5px solid red;
+}
+
+.green{
+    border-right: 5px solid green;
+}
+
+.close-btn{
+    opacity: 0;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    cursor: pointer;
+}
+
+.hist:hover .close-btn{
+    opacity: 1;
+    background-color: red;
+}
+
